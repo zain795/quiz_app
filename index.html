@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+</head>
+
+<body onload="showques(0)">
+    <div class="heading">
+        <h1 id="ab">quiz app</h1>
+    </div>
+    <div class="questionarea">
+        <h2 id="ques">abc</h2>
+    </div>
+    <div class="optionarea">
+        <div class="side1">
+            <span>
+                <input type="radio" name="option" id="opt1">
+                <label for="opt1" class="option"></label>
+            </span>
+            <span>
+                <input type="radio" name="option" id="opt2">
+                <label for="opt2" class="option"></label>
+            </span>
+        </div>
+        <div class="side2">
+            <span>
+                <input type="radio" name="option" id="opt3">
+                <label for="opt3" class="option"></label>
+            </span>
+            <span>
+                <input type="radio" name="option" id="opt4">
+                <label for="opt4" class="option"></label>
+            </span>
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <button class="next" onclick="nextques()">
+            <span id="submission">next</span>
+            
+    </div>
+    </button>
+    </div>
+    <footer>
+        
+        <script src="app.js"></script>
+    </footer>
+</body>
+
+</html>
